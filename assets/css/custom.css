@@ -1,0 +1,59 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+/* base style*/
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.helper-div{
+    height: 60px;
+}
+
+.mentorian-bg{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.banner-image{
+    width: 100%;
+    height: 400px;
+}
+
+h5,.section-title,.job-title{
+    font-weight: 600;
+}
+.job-title{
+    color: #c82333;
+}
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index:2;
+    color:#ffffff;
+    background-color:#c82333;
+    border-color:#c82333;
+  }
+
+  /* Job section  */
+  .company-name:hover{
+      text-decoration: none;
+  }
+
+  .job-details li{
+      margin-bottom: 1rem;
+  }
+  .job-details .wrapper{
+      margin:2rem 0;
+  }
+
+  @media only screen and (max-width:576px) {
+      .section-title{
+          font-size: 1.5rem;
+      }
+  }
+
+
+
+  
