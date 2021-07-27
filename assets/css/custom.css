@@ -29,6 +29,41 @@ h5,.section-title,.job-title{
 .job-title{
     color: #c82333;
 }
+
+.card{
+    box-shadow: 0 12px 24px lightgray;
+    border-radius: 1.75rem;
+}
+
+.card img{
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
+    position: relative;
+}
+
+.see-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.103) , rgba(0, 0, 0, 0.705));
+    border-radius: 1.75rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all .8s ease-out;
+}
+.see-more a{
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+.card:hover .see-more {
+    transform: scaleY(1);
+
+}
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     z-index:2;
     color:#ffffff;
@@ -48,6 +83,7 @@ h5,.section-title,.job-title{
       margin:2rem 0;
   }
 
+  
   @media only screen and (max-width:576px) {
       .section-title{
           font-size: 1.5rem;
