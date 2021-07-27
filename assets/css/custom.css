@@ -138,12 +138,30 @@ h5,.section-title,
       margin:2rem 0;
   }
 
-  
+  /* mobile device */
   @media only screen and (max-width:576px) {
       .section-title{
           font-size: 1.5rem;
       }
   }
+
+/* tablet device */
+@media only screen and (max-width:992px) {
+    .jobs .card{
+        height: 100%;
+    }
+
+    .jobs-btn{
+        width: 100%;
+        position: relative;
+        margin-top: 2rem;
+        margin-left: 0.8rem;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}
 
 
 
