@@ -79,13 +79,12 @@ h5,
 /* opportunities section  */
 .opportunities .card {
   box-shadow: 0 12px 24px lightgray;
-  border-radius: 1.75rem;
-  border: 0;
+  border-radius: 6px;
 }
 
 .opportunities .card img {
-  border-top-left-radius: 1.75rem;
-  border-top-right-radius: 1.75rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .see-more {
@@ -97,7 +96,7 @@ h5,
     rgba(128, 128, 128, 0.103),
     rgba(0, 0, 0, 0.705)
   );
-  border-radius: 1.75rem;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -106,21 +105,18 @@ h5,
   transform-origin: bottom;
   transition: all 0.8s ease-out;
 }
-.see-more a {
-  cursor: pointer;
-  font-size: 1.2rem;
-}
+
 .opportunities .card:hover .see-more {
   transform: scaleY(1);
 }
 /* job section */
-.categories a{
- color: #6a7695;
+.categories a {
+  color: #6a7695;
 }
-.categories li{
-   padding: 5px 10px;
+.categories li {
+  padding: 5px 10px;
 }
-.categories li:hover{
+.categories li:hover {
   border-radius: 14px;
   background: #c8233313;
 }
@@ -137,6 +133,12 @@ h5,
   border: 1px solid #eee;
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
   border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.job-list .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 6px rgb(0 0 0 / 10%);
 }
 
 .job-img {
@@ -203,7 +205,7 @@ h5,
 }
 
 .new_footer_top {
-  padding: 100px 0px;
+  padding: 50px 0;
   position: relative;
   overflow-x: hidden;
 }
@@ -221,18 +223,8 @@ h5,
 .new_footer_top .company_widget .f_subscribe_two .btn_get {
   border-width: 1px;
   margin-top: 20px;
-}
-.btn_get_two:hover {
-  background: transparent;
-  color: #c82333;
-}
-.btn_get:hover {
-  color: #fff;
-  background: #c82333;
-  border-color: #c82333;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+} 
+
 a:hover,
 a:focus,
 .btn:hover,
@@ -280,7 +272,7 @@ button:focus {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.btn_get_two {
+.btn-mentorian {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #c82333;
@@ -288,7 +280,7 @@ button:focus {
   color: #fff;
 }
 
-.btn_get_two:hover {
+.btn-mentorian:hover {
   background: transparent;
   color: #c82333;
   border-color: #c82333;
