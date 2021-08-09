@@ -27,14 +27,15 @@ h6 {
 .banner-margin-top {
   margin-top: 58px;
 }
-/* .mentorian-bg {
-  background-image: url(../images/bg.jpg);
+.workshop-details-bg {
+  background-image: url(../images/workshop-details.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 100px 0;
 }
-.mentorian-bg h1,
-.mentorian-bg p {
+/* .workshop-details-bg h1,
+.workshop-details-bg p {
   color: white;
 } */
 
@@ -63,20 +64,19 @@ h5,
   left: 50%;
   transform: translateX(-50%);
   width: 5px;
-  height: 5px;
+  height: 3px;
   visibility: hidden;
-  border-radius: 100%;
   background: #c82333;
   transition: all 0.5s;
 }
 .section-title:hover:before,
 .nav-link:hover:before {
   width: 100%;
-  height: 2px;
+  height: 3px;
   bottom: -0.3rem;
   visibility: visible;
   transition: all 0.5s;
-  background: black;
+ 
 }
 
 /* opportunities section  */
@@ -239,7 +239,7 @@ h5,
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.see-more-workshops a {
+.see-more-workshops i {
   transform: scale(0);
   transition: all 0.3s linear;
 }
@@ -247,8 +247,9 @@ h5,
 .workshop-image:hover .see-more-workshops {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
-.workshop-image:hover .see-more-workshops a {
+.workshop-image:hover .see-more-workshops i {
   transform: scale(1);
 }
 
@@ -289,6 +290,17 @@ h5,
   bottom: 0;
   left: -24px;
 }
+
+/* Workshop details  */
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.banner-paragraph {
+    font-size: 1.25rem;
+  }
+
 /* footer section  */
 .new_footer_area {
   background: #fbfbfd;
@@ -368,6 +380,7 @@ button:focus {
   background: #c82333;
   border-color: #c82333;
   color: #fff;
+  transition: all 0.3s linear;
 }
 
 .btn-mentorian:hover {
@@ -401,6 +414,12 @@ button:focus {
 
 /* mobile device */
 @media only screen and (max-width: 576px) {
+  .banner-paragraph {
+    font-size: 1rem;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
   .section-title {
     font-size: 1.5rem;
   }
@@ -415,6 +434,12 @@ button:focus {
 
 /* tablet device */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-paragraph {
+    font-size: 1.1rem;
+  }
   .jobs .card {
     padding: 0.75rem;
   }
