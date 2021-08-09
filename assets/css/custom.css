@@ -21,7 +21,7 @@ h6 {
 }
 
 /* banner section */
-.nav-link{
+.nav-link {
   padding-bottom: 0;
 }
 .banner-margin-top {
@@ -82,6 +82,7 @@ h5,
 /* opportunities section  */
 .opportunities .card,
 .workshops .card {
+  position: relative;
   background: #fff;
   border: 1px solid #eee;
   box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
@@ -246,8 +247,46 @@ h5,
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.workshop-image:hover .see-more-workshops a{
+.workshop-image:hover .see-more-workshops a {
   transform: scale(1);
+}
+
+/* workshop ribbon section  */
+.workshop-ribbon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  min-width: 100px;
+  height: 25px;
+  background-color: #c82333;
+  top: 0.5rem;
+  right: -0.5rem;
+  color: #fff;
+}
+
+.workshop-ribbon::before,
+.workshop-ribbon::after {
+  content: "";
+  position: absolute;
+}
+
+.workshop-ribbon::before {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #640610;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  right: 0;
+  bottom: -0.5rem;
+}
+
+.workshop-ribbon::after {
+  width: 25px;
+  height: 25px;
+  background-color: #c82333;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  bottom: 0;
+  left: -24px;
 }
 /* footer section  */
 .new_footer_area {
