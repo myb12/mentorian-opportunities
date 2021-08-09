@@ -216,6 +216,7 @@ h5,
 .workshops .card {
   min-height: 400px;
   height: 100%;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
 }
 
 .workshop-image img {
@@ -245,7 +246,7 @@ h5,
 
 .workshop-image:hover .see-more-workshops {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .workshop-image:hover .see-more-workshops a {
   transform: scale(1);
