@@ -21,10 +21,13 @@ h6 {
 }
 
 /* banner section */
+.nav-link{
+  padding-bottom: 0;
+}
 .banner-margin-top {
   margin-top: 58px;
 }
-.mentorian-bg {
+/* .mentorian-bg {
   background-image: url(../images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,7 +36,7 @@ h6 {
 .mentorian-bg h1,
 .mentorian-bg p {
   color: white;
-}
+} */
 
 .banner-image {
   width: 100%;
@@ -70,19 +73,24 @@ h5,
 .nav-link:hover:before {
   width: 100%;
   height: 2px;
-  bottom: 0px;
+  bottom: -0.3rem;
   visibility: visible;
   transition: all 0.5s;
   background: black;
 }
 
 /* opportunities section  */
-.opportunities .card {
-  box-shadow: 0 12px 24px lightgray;
+.opportunities .card,
+.workshops .card {
+  background: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
   border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 
-.opportunities .card img {
+.opportunities .card img,
+.workshops .card img {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -133,10 +141,11 @@ h5,
   border: 1px solid #eee;
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
   border-radius: 6px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
-.job-list .card:hover {
+.job-list .card:hover,
+.workshops .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 6px rgb(0 0 0 / 10%);
 }
@@ -199,6 +208,47 @@ h5,
   border-color: #c82333;
 }
 
+/* Workshop list section */
+.workshop-image {
+  position: relative;
+}
+.workshops .card {
+  min-height: 400px;
+  height: 100%;
+}
+
+.workshop-image img {
+  min-height: 180px;
+  height: 180px;
+  width: 100%;
+  margin: 0;
+}
+
+.see-more-workshops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.see-more-workshops a {
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+
+.workshop-image:hover .see-more-workshops {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.workshop-image:hover .see-more-workshops a{
+  transform: scale(1);
+}
 /* footer section  */
 .new_footer_area {
   background: #fbfbfd;
@@ -223,7 +273,7 @@ h5,
 .new_footer_top .company_widget .f_subscribe_two .btn_get {
   border-width: 1px;
   margin-top: 20px;
-} 
+}
 
 a:hover,
 a:focus,
