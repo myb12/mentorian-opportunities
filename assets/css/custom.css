@@ -76,7 +76,6 @@ h5,
   bottom: -0.3rem;
   visibility: visible;
   transition: all 0.5s;
- 
 }
 
 /* opportunities section  */
@@ -146,7 +145,7 @@ h5,
 }
 
 .job-list .card:hover,
-.workshops .card:hover {
+.workshops .card:hover{
   transform: translateY(-2px);
   box-shadow: 0 5px 6px rgb(0 0 0 / 10%);
 }
@@ -178,11 +177,9 @@ h5,
   font-size: 0.9rem;
 }
 
-.job-details li {
+.job-details li,
+.workshop-details li {
   margin-bottom: 1rem;
-}
-.job-details .wrapper {
-  margin: 2rem 0;
 }
 
 .job-type {
@@ -298,8 +295,35 @@ h5,
   line-height: 1.2;
 }
 .banner-paragraph {
-    font-size: 1.25rem;
-  }
+  font-size: 1.25rem;
+}
+
+.workshops-header img {
+  min-height: 450px;
+  height: 450px;
+  width: 100%;
+}
+
+.application-process {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 2px;
+  background: #f5f5f5;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+  transition: all 0.3s ease-in-out;
+}
+.application-process:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 5px 6px rgb(0 0 0 / 10%);
+}
+.fa-arrow-right{
+  transition: all 0.3s ease-in-out;
+}
+.application-process:hover .fa-arrow-right{
+  transform: translateX(14px); 
+}
 
 /* footer section  */
 .new_footer_area {
@@ -414,13 +438,15 @@ button:focus {
 
 /* mobile device */
 @media only screen and (max-width: 576px) {
-  .banner-paragraph {
+  .banner-paragraph,
+  p {
     font-size: 1rem;
   }
   .banner-title {
     font-size: 2rem;
   }
-  .section-title {
+  .section-title,
+  h3 {
     font-size: 1.5rem;
   }
   .job-title {
@@ -430,6 +456,12 @@ button:focus {
     max-width: 70px;
     max-height: 35px;
   }
+
+  .workshops-header img {
+    min-height: 220px;
+    height: 220px;
+    width: 100%;
+  }
 }
 
 /* tablet device */
@@ -437,7 +469,8 @@ button:focus {
   .banner-title {
     font-size: 3rem;
   }
-  .banner-paragraph {
+  .banner-paragraph,
+  p {
     font-size: 1.1rem;
   }
   .jobs .card {
@@ -466,5 +499,10 @@ button:focus {
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
     border-bottom-left-radius: 0;
+  }
+  .workshops-header img {
+    min-height: 380px;
+    height: 380px;
+    width: 100%;
   }
 }
